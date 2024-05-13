@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>个人介绍</title>
+	<meta name="keywords" content="个人网站" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+	<!-- 引入自定义样式 -->
+	<link rel="stylesheet" type="text/css" href="css/customStyle.css" />
+
+	<!-- layui核心css文件 -->
+	<link rel="stylesheet" href="layui/css/layui.css" media="all">
+	<link href="css/prettify.css" rel="stylesheet" type="text/css" media="all">
+
+	<!-- jquery核心文件 -->
+	<script type="application/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<!-- layui核心js -->
+	<script src="layui/layui.js" charset="utf-8"></script>
+	<!-- 引入layui处理js -->
+	<script src="js/layuiContro.js" type="text/javascript" charset="utf-8"></script>
+
+
+	<style >
+		body {
+			position: relative;
+			background-image: url("images/bg.jpeg");
+			background-repeat: repeat-y;
+			background-size: contain;
+			text-align: center;
+		}
+		audio{
+			height: 0;
+		}
+	</style>
+
+</head>
+<body>
+	<!-- 定义画布标签 -->
+	<canvas id="canvas"></canvas>
+
+	<!-- 顶部部分 -->
+	<div class="main">
+		<div class="headimg">
+			<img src="images/home.bmp" class="xwcms" onmouseover="this.src='images/me.jpg'"
+				onmouseout="this.src='images/me.jpg'" />
+		</div>
+		<div class="caption" onclick="musicPlay()">
+			<a style="color:white;">MUSIC</a>
+		</div>
+		<div class="des">
+			<span style="color: #2D93CA;">我的名字：尹维喜</span>
+			<span style="color: #FFB800;">座右铭：会当凌绝顶，一览众山小</span>
+			<div class="menu" style="color: #EB7350;">
+				特点:<span>阳光</span>/<span>健康</span>/<span>帅气</span>
+			</div>
+			<!-- 音频部分 -->
+			<audio src="songs/周杰伦%20-%20七里香（钢琴版）.mp3" controls="controls" autoplay=true id="one" hidden></audio>
+			<audio src="songs/文武贝%20-%20晴天%20(钢琴版).mp3" controls="controls" hidden></audio>
+			<audio src="songs/5音%20-%20花海（钢琴版）%20(改编版原唱_%20周杰伦).mp3" controls="controls" hidden></audio>
+		</div>
+	</div>
+
+
+	<!-- 核心内容 -->
+	<div class="layui-container" id="content">
+		<fieldset class="layui-elem-field layui-field-title layui-font-gray" style="margin-top: 50px;">
+			<legend>想要了解我？</legend>
+		</fieldset>
+
+		<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+			<ul class="layui-tab-title layui-font-20">
+				<li class="layui-font-20">自我介绍</li>
+			</ul>
+			<div class="layui-tab-content" style="height: 230px;  background-color: rgba(0, 0, 0, 0.2);" >
+				<div class="layui-tab-item" style="color:whitesmoke">
+					<p style="color:whitesmoke">
+						我是一名软件工程专业的大二学生，在滁州学院就读，老家在安徽阜阳。作为一个男生，我对打篮球和电竞都有浓厚的兴趣。
+					</p>
+					<p >
+						在打篮球方面，我喜欢挑战自己的身体素质和团队合作能力。篮球让我体验到团队配合的力量，培养了我的协调性和沟通能力。每次在球场上挥洒汗水，享受比赛的激烈和快节奏，让我感到非常充实和愉快。
+						<br/>
+					</p>
+					<p >
+						作为一名软件工程专业的学生，我对计算机技术和编程充满了热情。我喜欢通过编写代码来解决问题，探索新的技术和创造新的应用。我希望能够将我所学的知识和技能应用于实际项目中，为社会和人们的生活带来便利和创新。
+						<br/>
+					</p>
+					<p >
+						在大学期间，我不仅努力学习专业知识，还积极参与各类社团和活动，提升自己的综合素质。我相信通过不断学习和成长，我将能够在软件工程领域取得更好的成就。
+						<br/>
+					</p>
+					<p>
+						希望能够有机会结识更多志同道合的朋友，共同进步和交流。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 随机播放音频 -->
+	<script type="text/javascript" src="js/player.js"></script>
+	<!-- 烟花特效 -->
+	<script type="application/javascript" src="js/firework.js"></script>
+
+</body>
+</html>

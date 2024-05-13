@@ -1,0 +1,204 @@
+@charset "utf-8";
+body{
+	background-color:#F7F7F7;
+	font:12px 微软雅黑,宋体,Arial,sans-serif;
+	margin:0px;
+	padding:0px;
+	color:#858585;
+	
+}
+a:link {
+	color:black;
+	text-decoration:none;
+}
+
+a:visited {
+	color:black;
+	text-decoration:none;
+}
+	
+a:hover {
+	color:black;
+	text-decoration:none;
+	}
+	
+a:active {
+	color:black;
+	text-decoration:none;
+}
+
+.top{
+	width: 100%;
+	height: 30%;
+	/*background-image:url(../../../top_bg.jpeg);*/
+}
+.main{
+	margin:0 auto;
+	margin-top:5%;
+	width:300px;
+	height:400px;
+}
+.headimg{
+	margin:0 auto;
+	width:100px;
+}
+.caption{
+	margin:0 auto;
+	width:160px;
+	margin-left:90px;
+	color:white;
+	font-size:30px;
+	text-align:center;
+	margin-top:20px;
+	cursor:pointer;
+}
+
+.caption a:link {
+	color:white;
+	text-decoration:none;
+}
+
+.caption a:visited {
+	color:white;
+	text-decoration:none;
+}
+	
+.caption a:hover {
+	color:white;
+	text-decoration:none;
+	}
+	
+.caption a:active {
+	color:white;
+	text-decoration:none;
+}
+
+.des{
+	margin:0 auto;
+	color:white;
+	font-size:16px;
+	text-align:center;
+	margin-top:20px;
+}
+.des span{
+	display:block;
+	margin-top:15px;
+}
+.des .menu{
+	margin-top:15px;
+}
+.des .menu span{
+	display:inline;
+	font-size:13px;
+	margin:5px;
+	cursor:pointer;
+}
+
+.des .search{
+	margin-top:15px;
+	padding-left:20px;
+	display:block;
+}
+
+.des .search input{
+	width:200px;
+	float:left;
+	height:25px;
+	background-color:transparent;
+	border:1px solid white;
+	color:white;
+}
+
+.des .search div{
+	float:left;
+	text-align:center;
+	background:white;
+	height:29px;
+	margin-top:0px;
+	width:60px;
+	line-height:29px;
+	color:#FF7256;
+	cursor:pointer;
+}
+
+.bottom{
+	text-align:center;
+	width:100%;
+	line-height:30px;
+	margin-top:90px;
+}
+/***鼠标悬浮图片旋转360度 begin***/
+.xwcms {    
+            margin: 0 auto;
+            -webkit-border-radius: 110px;
+            border-radius: 110px;
+            -webkit-transition: -webkit-transform 0.4s ease-out;
+            -moz-transition: -moz-transform 0.4s ease-out;
+            -o-transition: -o-transform 0.4s ease-out;
+            -ms-transition: -ms-transform 0.4s ease-out;
+			width:130px;
+			height:130px;
+			box-shadow:0 0 0 5px #fff;
+       }
+.xwcms:hover {
+            -webkit-transform: rotateZ(360deg);
+            -moz-transform: rotateZ(360deg);
+            -o-transform: rotateZ(360deg);
+            -ms-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+        }
+/***鼠标悬浮图片旋转360度 begin***/	
+
+
+/*::::::::::::::::::适应不同分辨率:::::::::::::::::::::::::*/
+@media only screen and (min-width: 1024px) {
+	.rightblock .container-detail{
+		width:600px;
+	}
+	.rightblock .item {
+		width:280px;
+		margin:8px;
+	}
+	.rightblock .pager #kkpager{
+		margin-left:8px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.rightblock .container-detail{
+		width:750px;
+	}
+	.rightblock .item {
+		width:300px;
+		margin:25px;
+	}
+	.rightblock .pager #kkpager{
+		margin-left:25px;
+	}
+}
+
+
+@media only screen and (min-width: 1280px) {
+	.rightblock .container-detail{
+		/*width:750px;*/
+	}
+	.rightblock .item {
+		width:340px;
+		margin:25px;
+	}
+	.rightblock .pager #kkpager{
+		margin-left:25px;
+	}
+}
+@media only screen and (min-width: 1366px) {
+	.rightblock .container-detail{
+		width:800px;
+	}
+	.rightblock .item {
+		width:360px;
+		margin:25px;
+	}
+	.rightblock .pager #kkpager{
+		margin-left:25px;
+	}
+}
